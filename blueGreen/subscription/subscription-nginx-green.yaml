@@ -5,7 +5,8 @@ metadata:
   namespace: nginx-green
   annotations:
     apps.open-cluster-management.io/github-path: blueGreen/nginx/deployment
-    apps.open-cluster-management.io/github-branch: green-nginx
+    apps.open-cluster-management.io/github-branch: blue-nginx
+   #      apps.open-cluster-management.io/github-branch: green-nginx
   labels:
     app: nginx-deployment
 spec:
