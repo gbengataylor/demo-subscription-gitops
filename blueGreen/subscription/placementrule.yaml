@@ -7,9 +7,10 @@ metadata:
   labels:
     app: nginx-deployment
 spec:
-  clusterSelector: {}
-#    matchLabels:
- #     name: aws3-jpacker
+  clusterSelector: 
+  # clusterSelector: {} this is also ok
+     matchLabels:
+      app: nginx-deployment
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
@@ -19,6 +20,7 @@ metadata:
 labels:
   app: nginx-deployment
 spec:
-  clusterSelector: {}
-#    matchLabels:
- #     name: aws3-jpacker
+  clusterSelector:  
+   # clusterSelector: {} this is also ok
+     matchLabels:
+       app: nginx-deployment
